@@ -10,6 +10,13 @@ require("./models/database").connectDatabase();
 const logger = require("morgan");
 app.use(logger("tiny"));
 
+// cors
+const cors = require("cors");
+const corsOptions = {
+  origin: "http://localhost:3000",
+  credentials: true,
+};
+app.use(cors(corsOptions));
 // body parser
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));

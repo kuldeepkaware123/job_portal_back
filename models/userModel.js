@@ -9,17 +9,17 @@ const userModel = new mongoose.Schema(
       required: [true, "First Name is required"],
       maxLength: [15, "First Name should not exceed more than 15 characters"],
     },
-    lastname: {
-      type: String,
-      required: [true, "Last Name is required"],
-      maxLength: [15, "Last Name should not exceed more than 15 characters"],
-    },
-    contact: {
-      type: String,
-      required: [true, "Contact is required"],
-      maxLength: [10, "Contact should not exceed more than 10 characters"],
-      minLength: [10, "Contact should have atleast 10 characters"],
-    },
+    // lastname: {
+    //   type: String,
+    //   required: [true, "Last Name is required"],
+    //   maxLength: [15, "Last Name should not exceed more than 15 characters"],
+    // },
+    // contact: {
+    //   type: String,
+    //   required: [true, "Contact is required"],
+    //   maxLength: [10, "Contact should not exceed more than 10 characters"],
+    //   minLength: [10, "Contact should have atleast 10 characters"],
+    // },
     email: {
       type: String,
       required: [true, "Email is required"],
